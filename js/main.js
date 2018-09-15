@@ -105,6 +105,7 @@
             $pswp = $('.pswp')[0],
             $folioItems = $('.item-folio');
 
+        $WIN.on('load', function() {
             // get items
             $folioItems.each( function(i) {
 
@@ -155,6 +156,7 @@
 
             });
 
+        });
     };
     
 
