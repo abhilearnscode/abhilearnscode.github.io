@@ -115,6 +115,8 @@
                     $caption = $folio.find('.item-folio__caption'),
                     $titleText = '<h4>' + $.trim($title.html()) + '</h4>',
                     $captionText = $.trim($caption.html()),
+                    $cost = $folio.find('.item-folio__cat'),
+                    $costText = $.trim($cost.html()),
                     $href = $thumbLink.attr('href'),
                     $width  = $img.prop("naturalWidth"),
                     $height = $img.prop("naturalHeight");
@@ -127,6 +129,10 @@
 
                 if ($caption.length > 0) {
                     item.title = $.trim($titleText + $captionText);
+                }
+
+                if ($cost.length > 0) {
+                    item.title += $.trim($costText);
                 }
 
                 items.push(item);
