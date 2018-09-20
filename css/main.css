@@ -3618,3 +3618,14 @@ footer .row {
 .center-text {
     text-align: center !important;
 }
+
+.pic-avatar {
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: 1px solid #dfdfdf;
+    background: url("../images/varsha.jpg") no-repeat;
+    margin: auto;
+    margin-bottom: 20px;
+    background-size: contain;
+}
